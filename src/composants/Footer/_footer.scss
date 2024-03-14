@@ -1,0 +1,43 @@
+@import "../../styles/variables/variables";
+
+.footer-container {
+    background-color: $black-color;
+    width: 100%;
+    display: flex;
+    @include flexbox(column, center, center);
+    padding: 35px 0 10px 0;
+    margin-top: 25px;
+
+    .footer-logo {
+        width: 122px;
+        height: 39.444px;
+    }
+
+    .footer-text-container {
+        @include flexbox(column, flex-end, center);
+        width: 513px;
+        height: 46px;
+        padding-top: 29px;
+
+        .footer-text {
+            @include font-montserrat-500(24px, white, 142.6%);
+            text-align: center;
+        }
+    }
+}
+
+// Media Queries
+
+@media screen and (max-width: 375px) {
+    .footer-container {
+        .footer-text-container {
+            width: 133px;
+            height: 46px;
+            padding-top: 0;
+
+            .footer-text {
+                @include font-montserrat-500(12px, white, 142.6%);
+            }
+        }
+    }
+}

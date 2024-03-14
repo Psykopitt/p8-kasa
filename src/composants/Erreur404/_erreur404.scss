@@ -1,0 +1,59 @@
+@import "../../styles/variables/variables";
+
+.erreur404 {
+    width: 100%;
+    @include flexbox(column, none, center);
+    gap: 139px;
+
+    .erreur404-title {
+        width: 597px;
+        height: 263px;
+        margin: 0;
+        @include flexbox(column, center, center);
+        @include font-montserrat(288px, $main-color, 142.6%, 700);
+    }
+
+    .erreur404-subtitle {
+        @include font-montserrat-500(36px, $main-color, 142.6%);
+    }
+
+    .erreur404-text-container {
+        margin-bottom: 139px;
+
+        .erreur404-text {
+            @include font-montserrat-500(18px, $main-color, 142.6%);
+            text-decoration-line: underline;
+            cursor: pointer;
+        }
+    }
+}
+
+// Media Queries
+
+@media screen and (max-width: 375px) {
+    .erreur404 {
+        gap: 113px;
+        @include flexbox(column, center, center);
+
+        .erreur404-title {
+            width: 100%;
+            height: 0px;
+            @include font-montserrat(96px, $main-color, 142.6%, 700);
+            padding-top: 90px;
+        }
+
+        .erreur404-subtitle {
+            width: 100%;
+            text-align: center;
+            @include font-montserrat-500(18px, $main-color, 142.6%);
+        }
+
+        .erreur404-text-container {
+            margin-bottom: 113px;
+
+            .erreur404-text {
+                @include font-montserrat-500(14px, $main-color, 142.6%);
+            }
+        }
+    }
+}

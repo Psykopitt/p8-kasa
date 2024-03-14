@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+//Color
+$main-color: #ff6060;
+$background-color: #f6f6f6;
+$star-empty: #e3e3e3;
+$black-color: black;
+
+//Polices
+@mixin font-montserrat-500(
+    $size,
+    $color,
+    $line-height,
+    $weight: 500,
+    $style: normal,
+    $family: "Montserrat"
+) {
+    font-size: $size;
+    color: $color;
+    line-height: $line-height;
+    font-weight: $weight;
+    font-style: $style;
+    font-family: $family;
+}
+
+@mixin font-montserrat(
+    $size,
+    $color,
+    $line-height,
+    $weight,
+    $style: normal,
+    $family: "Montserrat"
+) {
+    font-size: $size;
+    color: $color;
+    line-height: $line-height;
+    font-weight: $weight;
+    font-style: $style;
+    font-family: $family;
+}
+
+//Flexbox
+
+@mixin flexbox($flex-direction, $justify-content, $align-items) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}

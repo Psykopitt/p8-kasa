@@ -1,0 +1,13 @@
+@import "./variables/variables";
+@import "./settings.scss";
+
+@import "./../composants/Header/header";
+@import "./../composants/Footer/footer";
+@import "./../composants/Card/card";
+@import "./../composants/Collapse/collapse";
+@import "./../composants/Erreur404/erreur404";
+@import "./../composants/Carrousel/carrousel";
+
+@import "./../pages/Apropos/apropos";
+@import "./../pages/Home/home";
+@import "./../pages/Estate/estate";

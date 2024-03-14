@@ -1,0 +1,22 @@
+@import "../../styles/variables/variables";
+
+.lodging-cards-container {
+    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: $background-color;
+    padding: 2vw;
+    gap: 2vw;
+    border-radius: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    @media (max-width: 769px) {
+        grid-template-columns: 1fr 1fr;
+        background-color: #ffff;
+    }
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px 0px 20px 0px;
+    }
+}
